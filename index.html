@@ -121,14 +121,10 @@
     }
 
     .products {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      width: 80%;
-    }
+  position: relative; /* Alterar de absolute para relative */
+  margin-top: 120px; /* Adicionar margem superior para evitar sobreposição */
+  transform: translateX(-50%); /* Remover o translateY(-50%) */
+}
     .product-card {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
