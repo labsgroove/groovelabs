@@ -3,67 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groove Labs - Impressão 3D</title>
-  <!-- Fonte elegante e moderna -->
+  <meta name="description" content="Groove Labs - Produtos criativos com impressão 3D personalizados para você. Capinhas, vasos e muito mais.">
+  <meta name="keywords" content="impressão 3D, decoração, produtos personalizados, Groove Labs, vasos 3D, capinhas 3D">
+  <meta name="author" content="Groove Labs">
+  <title>Groove Labs - Impressão 3D Criativa</title>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <!-- Ícones Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    scroll-behavior: smooth; /* Para fazer a rolagem suave */
-  }
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      font-family: 'Audiowide', cursive;
+      color: #fff;
+    }
 
-    section {
-    min-height: 100vh; /* Define a altura mínima como 100% da altura da visualização */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    iframe.bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      border: none;
+    }
 
-    .bg {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  z-index: -1;
-  border: none;
-}
-
-    .header {
+    header.header {
       position: absolute;
-      top: 40px; left: 20px;
+      top: 40px;
+      left: 20px;
       display: flex;
       align-items: center;
     }
+
     .header img {
       max-width: 250px;
       height: auto;
     }
+
     .header h1 {
       margin-left: 15px;
-      font-family: 'Audiowide', cursive;
       font-size: 2rem;
       color: #0ff;
-      text-shadow:
-        0 0 5px #0ff,
-        0 0 10px #0ff,
-        0 0 20px #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
       animation: neon 1.5s ease-in-out infinite alternate;
     }
+
     @keyframes neon {
       from {
-        text-shadow:
-          0 0 5px #0ff,
-          0 0 10px #0ff;
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
       }
       to {
-        text-shadow:
-          0 0 20px #0ff,
-          0 0 30px #0ff,
-          0 0 40px #0ff;
+        text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
       }
     }
 
@@ -72,96 +65,100 @@
       top: 20px;
       right: 20px;
       color: #0ff;
-      font-family: 'Audiowide', cursive;
       font-size: 1rem;
       text-align: right;
     }
 
     .social {
       position: absolute;
-      bottom: 20px; left: 20px;
+      bottom: 20px;
+      left: 20px;
       display: flex;
       flex-direction: column;
     }
+
     .social a {
       margin: 5px 0;
       color: #fff;
-      text-decoration: none;
       font-size: 1.5rem;
       transition: color 0.3s;
     }
+
     .social a:hover {
       color: #0ff;
     }
 
+    main {
+      padding-top: 180px;
+    }
+
     .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 180px 40px 40px; /* Aumentado de 100px para 180px */
-  justify-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    .product-card {
+      max-width: 300px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
 
-.product-card {
-  width: 100%;
-  max-width: 300px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.03);
-}
+    .product-card:hover {
+      transform: scale(1.03);
+    }
 
     .product-card img {
       max-width: 100%;
       height: auto;
       border-radius: 5px;
     }
-    .product-card button {
+
+    .product-card a {
+      display: inline-block;
       margin-top: 10px;
       padding: 10px 20px;
-      border: none;
       border-radius: 5px;
       background: #0ff;
       color: #000;
-      cursor: pointer;
+      text-decoration: none;
       font-size: 1rem;
       transition: background 0.3s;
     }
-    .product-card button:hover {
+
+    .product-card a:hover {
       background: #0cc;
     }
   </style>
 </head>
 <body>
-  <iframe class="bg" src="https://psicotela.vercel.app" frameborder="0"></iframe>
-
+  <iframe class="bg" src="https://psicotela.vercel.app" frameborder="0" title="Fundo psicodélico Groove Labs"></iframe>
 
   <header class="header">
     <img src="https://i.ibb.co/Ld8v63tR/gvroovetransp.png" alt="Logo Groove Labs">
     <h1>Groove Labs</h1>
   </header>
 
-  <div class="clock" id="clock"></div>
+  <div class="clock" id="clock" aria-label="Relógio em tempo real"></div>
 
-  <div class="social">
-    <a href="https://instagram.com/seu_perfil" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61575721253459" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://linkedin.com/in/seu_perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
+  <nav class="social" aria-label="Redes sociais Groove Labs">
+    <a href="https://instagram.com/seu_perfil" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61575721253459" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://linkedin.com/in/seu_perfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </nav>
 
   <main>
-    <div id="products-container" class="products"></div>
+    <section id="products-container" class="products" aria-label="Lista de produtos"></section>
   </main>
 
   <script>
@@ -193,12 +190,13 @@
         img.src = p.imageUrl;
         img.alt = p.title;
 
-        const btn = document.createElement('button');
-        btn.textContent = p.title;
-        btn.onclick = () => window.open(p.link, '_blank');
+        const link = document.createElement('a');
+        link.href = p.link;
+        link.target = '_blank';
+        link.textContent = p.title;
 
         card.appendChild(img);
-        card.appendChild(btn);
+        card.appendChild(link);
         container.appendChild(card);
       });
     }
