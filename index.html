@@ -69,24 +69,33 @@
       text-align: right;
     }
 
-    .social {
-      position: absolute;
-      top: 20px;
-      left: 15px;
-      display: flex;
-      flex-direction: column;
-    }
+    .social-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
 
-    .social a {
-      margin: 5px 0;
-      color: #fff;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
+.social-bar a img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 5px #0ff);
+  transition: transform 0.3s ease, filter 0.3s;
+}
 
-    .social a:hover {
-      color: #0ff;
-    }
+.social-bar a:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #0ff);
+}
 
     main {
       padding-top: 180px;
@@ -151,17 +160,18 @@
 
   <div class="clock" id="clock" aria-label="Relógio em tempo real"></div>
 
-  <nav class="social" aria-label="Redes sociais Groove Labs">
-  <a href="https://www.instagram.com/_groovelabs/" target="_blank" aria-label="Instagram">
-    <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram" width="24" height="24">
+  <footer class="social-bar" aria-label="Redes sociais Groove Labs">
+  <a href="https://instagram.com/seu_perfil" target="_blank" aria-label="Instagram">
+    <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram">
   </a>
   <a href="https://www.facebook.com/profile.php?id=61575721253459" target="_blank" aria-label="Facebook">
-    <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
+    <img src="https://www.facebook.com/favicon.ico" alt="Facebook">
   </a>
   <a href="https://linkedin.com/in/seu_perfil" target="_blank" aria-label="LinkedIn">
-    <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="LinkedIn" width="24" height="24">
+    <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="LinkedIn">
   </a>
-</nav>
+</footer>
+
 
 
   <main>
