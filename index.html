@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Groove Labs - Produtos criativos com impressão 3D personalizados para você. Capinhas, vasos e muito mais.">
-  <meta name="keywords" content="impressão 3D, decoração, produtos personalizados, Groove Labs, vasos 3D, capinhas 3D">
+  <meta name="description" content="Groove Labs - Empresa especializada em soluções criativas com impressão 3D.">
+  <meta name="keywords" content="impressão 3D, Groove Labs, personalização, design, inovação">
   <meta name="author" content="Groove Labs">
   <title>Groove Labs - Impressão 3D Criativa</title>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     html, body {
       height: 100%;
@@ -18,6 +17,7 @@
       scroll-behavior: smooth;
       font-family: 'Audiowide', cursive;
       color: #fff;
+      background-color: #000;
     }
 
     iframe.bg {
@@ -69,86 +69,31 @@
       text-align: right;
     }
 
-    .social-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 10px 0;
-  z-index: 1000;
-  backdrop-filter: blur(6px);
-  border-top: 1px solid rgba(0, 255, 255, 0.2);
-}
-
-.social-bar a img {
-  width: 32px;
-  height: 32px;
-  filter: drop-shadow(0 0 5px #0ff);
-  transition: transform 0.3s ease, filter 0.3s;
-}
-
-.social-bar a:hover img {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 10px #0ff);
-}
-
     main {
-  padding-top: 180px;
-  padding-bottom: clamp(80px, 10vh, 150px);
-}
-
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      justify-items: center;
-      max-width: 1200px;
+      padding-top: 200px;
+      padding-bottom: 100px;
+      text-align: center;
+      max-width: 800px;
       margin: 0 auto;
     }
 
-    .product-card {
-      max-width: 300px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 15px;
+    footer.footer {
+      background: rgba(0, 0, 0, 0.8);
+      border-top: 1px solid rgba(0, 255, 255, 0.2);
+      color: #0ff;
       text-align: center;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-      transition: transform 0.3s ease;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      backdrop-filter: blur(6px);
     }
 
-    .product-card:hover {
-      transform: scale(1.03);
+    footer.footer strong {
+      color: #fff;
     }
 
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .product-card a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background: #0ff;
-      color: #000;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    .product-card a:hover {
-      background: #0cc;
+    a {
+      color: #0ff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -162,90 +107,20 @@
 
   <div class="clock" id="clock" aria-label="Relógio em tempo real"></div>
 
-  <footer class="social-bar" aria-label="Redes sociais Groove Labs">
-  <a href="https://wa.me/c/554187347407" target="_blank" aria-label="WhatsApp">
-    <img src="https://i.ibb.co/SDLR2b4P/whats.png" alt="WhatsApp">
-  </a>
-  <a href="https://www.instagram.com/_groovelabs/" target="_blank" aria-label="Instagram">
-    <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram">
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61575721253459" target="_blank" aria-label="Facebook">
-    <img src="https://www.facebook.com/favicon.ico" alt="Facebook">
-  </a>
-  <a href="https://www.youtube.com/@labsgroove" target="_blank" aria-label="YouTube">
-    <img src="https://i.ibb.co/3y24TZdr/yt.png" alt="YouTube">
-  </a>
-  <a href="https://discord.com/invite/CvGYqpsHzd" target="_blank" aria-label="Discord">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord" style="background:#fff; border-radius:50%; padding:2px;">
-  </a>
-</footer>
-
-
-
   <main>
-    <section id="products-container" class="products" aria-label="Lista de produtos"></section>
+    <h2>Sobre a Groove Labs</h2>
+    <p>Somos uma empresa brasileira especializada em soluções criativas com impressão 3D, oferecendo serviços personalizados para design, decoração e utilidades.</p>
+    <p>Nossa missão é transformar ideias em objetos reais através da inovação e da criatividade.</p>
   </main>
 
+  <footer class="footer" aria-label="Informações institucionais e de contato">
+    <p><strong>Groove Labs</strong></p>
+    <p>CNPJ: 61.821.506/0001-XX</p>
+    <p>Curitiba - PR, Brasil</p>
+    <p>Contato: <a href="mailto:contato@groovelabs.com.br">contato@groovelabs.com.br</a></p>
+  </footer>
+
   <script>
-    const products = [
-      {
-        title: 'Porta Retrato 10x15 Personalizado',
-        imageUrl: 'https://i.ibb.co/b8LDP9Z/IMG-20250501-103744683-1.png',
-        link: 'https://pr.olx.com.br/regiao-de-curitiba-e-paranagua/para-a-sua-casa/decoracoes-para-casa/porta-retrato-personalizado-10x15cm-1400015438?'
-      },
-      {
-        title: 'Capinha de Crachá Personalizada',
-        imageUrl: 'https://i.ibb.co/wFt8g4yQ/cart.png',
-        link: 'https://pr.olx.com.br/regiao-de-curitiba-e-paranagua/bijouteria-relogios-e-acessorios/porta-cracha-personalizado-1397313595?'
-      },
-      {
-        title: 'Porta Escovas de Dentes',
-        imageUrl: 'https://i.ibb.co/jkY7XWL5/IMG-20250508-130446671.png',
-        link: 'https://produto.mercadolivre.com.br/MLB-5380954632-porta-escova-groove-labs-voronoi-copo-_JM'
-      },
-      {
-        title: 'Creeper Suporte Controle',
-        imageUrl: 'https://i.ibb.co/0pPJQV2x/IMG-20250429-103033347.png',
-        link: 'https://produto.mercadolivre.com.br/MLB-5372856314-creeper-minecraft-suporte-controle-ps-xbox-universal-_JM'
-      },
-      {
-        title: 'Vasos Octogonais Par',
-        imageUrl: 'https://i.ibb.co/JWBbpp7G/oct.png',
-        link: 'https://produto.mercadolivre.com.br/MLB-5353592678-vaso-groove-labs-par-octagonal-diamante-pla-camaleo-_JM'
-      },
-      {
-        title: 'Vaso Espiralado Longo',
-        imageUrl: 'https://i.ibb.co/svB060Rn/vlongo.png',
-        link: 'https://produto.mercadolivre.com.br/MLB-5365504868-vaso-groove-labs-longo-espiralado-210mm-_JM'
-      },
-      {
-        title: 'Vaso Gota',
-        imageUrl: 'https://i.ibb.co/svngHTgm/gota.png',
-        link: 'https://produto.mercadolivre.com.br/MLB-4038408873-jarro-groove-labs-gota-230mm-decorativo-_JM'
-      }
-    ];
-
-    function renderProducts() {
-      const container = document.getElementById('products-container');
-      products.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'product-card';
-
-        const img = document.createElement('img');
-        img.src = p.imageUrl;
-        img.alt = p.title;
-
-        const link = document.createElement('a');
-        link.href = p.link;
-        link.target = '_blank';
-        link.textContent = p.title;
-
-        card.appendChild(img);
-        card.appendChild(link);
-        container.appendChild(card);
-      });
-    }
-
     function updateClock() {
       const clock = document.getElementById('clock');
       const now = new Date();
@@ -256,7 +131,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-      renderProducts();
       updateClock();
       setInterval(updateClock, 1000);
     });
